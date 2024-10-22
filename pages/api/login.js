@@ -43,6 +43,6 @@ export default async function handler(req, res) {
     return res.status(200).json({ token });
   } catch (error) {
     console.error('Fout bij het genereren van JWT:', error);
-    return res.status(500).json({ message: 'Kan token niet genereren' });
+    return res.status(500).json({ message: 'Kan token niet genereren...' });
   }
 }
